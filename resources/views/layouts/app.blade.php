@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
-                        <a href="index.html"><img src="assets/imgs/logo/logo.png" alt="logo"></a>
+                        <h4>ABHISHEK</h4>
                     </div>
                     <div class="header-right">
                         <div class="search-style-1">
@@ -95,7 +95,7 @@
                                             </li>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-2.jpg"></a>
+                                                    <a href="product-details.html"><img alt="Abhishek" src="assets/imgs/shop/thumbnail-2.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="product-details.html">Corduroy Shirts</a></h4>
@@ -604,17 +604,17 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="widget-about font-md mb-md-5 mb-lg-0">
                             <div class="logo logo-width-1 wow fadeIn animated">
-                                <a href="index.html"><img src="assets/imgs/logo/logo.png" alt="logo"></a>
+                                <h4>ABHISHEK</h4>
                             </div>
                             <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                             <p class="wow fadeIn animated">
-                                <strong>Address: </strong>562 Wellington Road
+                                <strong>Address: </strong>Ghaziabad
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Phone: </strong>+1 0000-000-000
+                                <strong>Phone: </strong>+91 7982748233
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Email: </strong>contact@surfsidemedia.in
+                                <strong>Email: </strong>contact@abhishek-pandeyji.com
                             </p>
                             <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                             <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
@@ -677,7 +677,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="text-lg-end text-start font-sm text-muted mb-0">
-                        &copy; <strong class="text-brand">SurfsideMedia</strong> All rights reserved
+                        &copy; <strong class="text-brand">ABHISHEK</strong> All rights reserved
                     </p>
                 </div>
             </div>
