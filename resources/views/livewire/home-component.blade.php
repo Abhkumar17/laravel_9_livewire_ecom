@@ -128,7 +128,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="shope">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -166,7 +166,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="shope">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Plain Color Pocket Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirts</a>
+                                            <a href="shope">Shirts</a>
                                         </div>
                                         <h2><a href="product-details.html">Vintage Floral Oil Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -242,7 +242,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="shope">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Hawaiian Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -280,7 +280,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirt</a>
+                                            <a href="shope">Shirt</a>
                                         </div>
                                         <h2><a href="product-details.html">Flowers Sleeve Lapel Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -318,7 +318,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirts</a>
+                                            <a href="shope">Shirts</a>
                                         </div>
                                         <h2><a href="product-details.html">Ethnic Floral Casual Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -356,7 +356,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shoes</a>
+                                            <a href="shope">Shoes</a>
                                         </div>
                                         <h2><a href="product-details.html">Stitching Hole Sandals</a></h2>
                                         <div class="rating-result" title="90%">
@@ -390,7 +390,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirt</a>
+                                            <a href="shope">Shirt</a>
                                         </div>
                                         <h2><a href="product-details.html">Mens Porcelain Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -434,7 +434,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Donec </a>
+                                            <a href="shope">Donec </a>
                                         </div>
                                         <h2><a href="product-details.html">Lorem ipsum dolor</a></h2>
                                         <div class="rating-result" title="90%">
@@ -472,7 +472,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="shope">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Sed tincidunt interdum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -510,7 +510,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="shope">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Fusce metus orci</a></h2>
                                         <div class="rating-result" title="90%">
@@ -548,7 +548,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="shope">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Integer venenatis libero</a></h2>
                                         <div class="rating-result" title="90%">
@@ -586,7 +586,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Speaker</a>
+                                            <a href="shope">Speaker</a>
                                         </div>
                                         <h2><a href="product-details.html">Cras tempor orci id</a></h2>
                                         <div class="rating-result" title="90%">
@@ -624,7 +624,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Camera</a>
+                                            <a href="shope">Camera</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam cursus mi qui</a></h2>
                                         <div class="rating-result" title="90%">
@@ -662,7 +662,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Phone</a>
+                                            <a href="shope">Phone</a>
                                         </div>
                                         <h2><a href="product-details.html">Fusce fringilla ultrices</a></h2>
                                         <div class="rating-result" title="90%">
@@ -696,7 +696,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="shope">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html">Sed sollicitudin est</a></h2>
                                         <div class="rating-result" title="90%">
@@ -740,7 +740,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="shope">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Donec ut nisl rutrum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -778,7 +778,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="shope">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam dapibus pharetra</a></h2>
                                         <div class="rating-result" title="90%">
@@ -816,7 +816,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="shope">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Morbi dictum finibus</a></h2>
                                         <div class="rating-result" title="90%">
@@ -854,7 +854,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="shope">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Nunc volutpat massa</a></h2>
                                         <div class="rating-result" title="90%">
@@ -892,7 +892,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Speaker</a>
+                                            <a href="shope">Speaker</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam ultricies luctus</a></h2>
                                         <div class="rating-result" title="90%">
@@ -930,7 +930,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Camera</a>
+                                            <a href="shope">Camera</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam mattis enim</a></h2>
                                         <div class="rating-result" title="90%">
@@ -968,7 +968,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Phone</a>
+                                            <a href="shope">Phone</a>
                                         </div>
                                         <h2><a href="product-details.html">Vivamus sollicitudin</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1002,7 +1002,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="shope">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html"> Donec ut nisl rutrum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1035,7 +1035,7 @@
                     <div class="banner-text d-md-block d-none">
                         <h4 class="mb-15 mt-40 text-brand">Repair Services</h4>
                         <h1 class="fw-600 mb-20">We're an Apple <br>Authorised Service Provider</h1>
-                        <a href="shop.html" class="btn">Learn More <i class="fi-rs-arrow-right"></i></a>
+                        <a href="shope" class="btn">Learn More <i class="fi-rs-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1048,51 +1048,51 @@
                     <div class="carausel-6-columns" id="carausel-6-columns">
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-1.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-1.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">T-Shirt</a></h5>
+                            <h5><a href="shope">T-Shirt</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"> <img src="assets/imgs/shop/category-thumb-2.jpg" alt=""></a>
+                                <a href="shope"> <img src="assets/imgs/shop/category-thumb-2.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Bags</a></h5>
+                            <h5><a href="shope">Bags</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-3.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-3.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Sandan</a></h5>
+                            <h5><a href="shope">Sandan</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-4.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-4.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Scarf Cap</a></h5>
+                            <h5><a href="shope">Scarf Cap</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-5.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-5.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Shoes</a></h5>
+                            <h5><a href="shope">Shoes</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-6.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-6.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Pillowcase</a></h5>
+                            <h5><a href="shope">Pillowcase</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-7.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-7.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Jumpsuits</a></h5>
+                            <h5><a href="shope">Jumpsuits</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="assets/imgs/shop/category-thumb-8.jpg" alt=""></a>
+                                <a href="shope"><img src="assets/imgs/shop/category-thumb-8.jpg" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Hats</a></h5>
+                            <h5><a href="shope">Hats</a></h5>
                         </div>
                     </div>
                 </div>
@@ -1107,7 +1107,7 @@
                             <div class="banner-text">
                                 <span>Smart Offer</span>
                                 <h4>Save 20% on <br>Woman Bag</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="shope">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

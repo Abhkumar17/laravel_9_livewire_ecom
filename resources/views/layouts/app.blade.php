@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
-<title>Abhishek</title>
+<title>Surfside Media</title>
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +12,8 @@
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 {{-- <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.ico"> --}}
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/custom.css"></head>
+<link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom.css')}}"></head>
 
 <body>
     <header class="header-area header-style-1 header-height-2">
@@ -25,9 +26,9 @@
                                 <li>
                                     <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
                                     <ul class="language-dropdown">
-                                        <li><a href="#"><img src="assets/imgs/theme/flag-fr.png" alt="">Français</a></li>
-                                        <li><a href="#"><img src="assets/imgs/theme/flag-dt.png" alt="">Deutsch</a></li>
-                                        <li><a href="#"><img src="assets/imgs/theme/flag-ru.png" alt="">Pусский</a></li>
+                                        <li><a href="#"><img src="{{asset('assets/imgs/theme/flag-fr.png')}}')}}" alt="">Français</a></li>
+                                        <li><a href="#"><img src="{{asset('assets/imgs/theme/flag-dt.png')}}')}}" alt="">Deutsch</a></li>
+                                        <li><a href="#"><img src="{{asset('assets/imgs/theme/flag-ru.png')}}')}}" alt="">Pусский</a></li>
                                     </ul>
                                 </li>                                
                             </ul>
@@ -46,9 +47,21 @@
                     </div>
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
+                            @auth
                             <ul>                                
-                                <li><i class="fi-rs-key"></i><a href="login.html">Log In </a>  / <a href="register.html">Sign Up</a></li>
+                                <li>
+                                    <i class="fi-rs-user"></i>{{Auth::user()->name}} / 
+                                    <form action="{{route('logout')}}" method="post">
+                                        @csrf
+                                    <a href="{{route('logout')}}" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>
+                                    </form>
+                                </li>
+                                </ul>
+                            @else
+                            <ul>                                
+                            <li><i class="fi-rs-key"></i><a href="{{route('login')}}">Log In </a>  / <a href="{{route('register')}}">Sign Up</a></li>
                             </ul>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -58,7 +71,7 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
-                        <h4>ABHISHEK</h4>
+                        <a href="/"><h1>Abhishek</h1></a>
                     </div>
                     <div class="header-right">
                         <div class="search-style-1">
@@ -70,20 +83,20 @@
                             <div class="header-action-2">
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.php">
-                                        <img class="svgInject" alt="Surfside Media" src="assets/imgs/theme/icons/icon-heart.svg">
+                                        <img class="svgInject" alt="Surfside Media" src="{{asset('assets/imgs/theme/icons/icon-heart.svg')}}">
                                         <span class="pro-count blue">4</span>
                                     </a>
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="cart.html">
-                                        <img alt="Surfside Media" src="assets/imgs/theme/icons/icon-cart.svg">
+                                        <img alt="Surfside Media" src="{{asset('assets/imgs/theme/icons/icon-cart.svg')}}">
                                         <span class="pro-count blue">2</span>
                                     </a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-3.jpg"></a>
+                                                    <a href="product-details.html"><img alt="Surfside Media" src="{{asset('assets/imgs/shop/thumbnail-3.jpg')}}"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="product-details.html">Daisy Casual Bag</a></h4>
@@ -95,7 +108,7 @@
                                             </li>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="product-details.html"><img alt="Abhishek" src="assets/imgs/shop/thumbnail-2.jpg"></a>
+                                                    <a href="product-details.html"><img alt="Surfside Media" src="{{asset('assets/imgs/shop/thumbnail-2.jpg')}}"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="product-details.html">Corduroy Shirts</a></h4>
@@ -127,7 +140,7 @@
             <div class="container">
                 <div class="header-wrap header-space-between position-relative">
                     <div class="logo logo-width-1 d-block d-lg-none">
-                        <a href="index.html"><img src="assets/imgs/logo/logo.png" alt="logo"></a>
+                        <a href="index.html"><img src="{{asset('assets/imgs/logo/logo.png')}}" alt="logo"></a>
                     </div>
                     <div class="header-nav d-none d-lg-flex">
                         <div class="main-categori-wrap d-none d-lg-block">
@@ -172,7 +185,7 @@
                                                 </li>
                                                 <li class="mega-menu-col col-lg-5">
                                                     <div class="header-banner2">
-                                                        <img src="assets/imgs/banner/menu-banner-2.jpg" alt="menu_banner1">
+                                                        <img src="{{asset('assets/imgs/banner/menu-banner-2.jpg')}}" alt="menu_banner1">
                                                         <div class="banne_info">
                                                             <h6>10% Off</h6>
                                                             <h4>New Arrival</h4>
@@ -180,7 +193,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="header-banner2">
-                                                        <img src="assets/imgs/banner/menu-banner-3.jpg" alt="menu_banner2">
+                                                        <img src="{{asset('assets/imgs/banner/menu-banner-3.jpg')}}" alt="menu_banner2">
                                                         <div class="banne_info">
                                                             <h6>15% Off</h6>
                                                             <h4>Hot Deals</h4>
@@ -226,7 +239,7 @@
                                                 </li>
                                                 <li class="mega-menu-col col-lg-5">
                                                     <div class="header-banner2">
-                                                        <img src="assets/imgs/banner/menu-banner-4.jpg" alt="menu_banner1">
+                                                        <img src="{{asset('assets/imgs/banner/menu-banner-4.jpg')}}" alt="menu_banner1">
                                                         <div class="banne_info">
                                                             <h6>10% Off</h6>
                                                             <h4>New Arrival</h4>
@@ -273,7 +286,7 @@
                                                 </li>
                                                 <li class="mega-menu-col col-lg-5">
                                                     <div class="header-banner2">
-                                                        <img src="assets/imgs/banner/menu-banner-5.jpg" alt="menu_banner1">
+                                                        <img src="{{asset('assets/imgs/banner/menu-banner-5.jpg')}}" alt="menu_banner1">
                                                         <div class="banne_info">
                                                             <h6>10% Off</h6>
                                                             <h4>New Arrival</h4>
@@ -281,7 +294,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="header-banner2">
-                                                        <img src="assets/imgs/banner/menu-banner-6.jpg" alt="menu_banner2">
+                                                        <img src="{{asset('assets/imgs/banner/menu-banner-6.jpg')}}" alt="menu_banner2">
                                                         <div class="banne_info">
                                                             <h6>15% Off</h6>
                                                             <h4>Hot Deals</h4>
@@ -353,7 +366,7 @@
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-34">
                                                 <div class="menu-banner-wrap">
-                                                    <a href="product-details.html"><img src="assets/imgs/banner/menu-banner.jpg" alt="Surfside Media"></a>
+                                                    <a href="product-details.html"><img src="{{asset('assets/imgs/banner/menu-banner.jpg')}}" alt="Surfside Media"></a>
                                                     <div class="menu-banner-content">
                                                         <h4>Hot deals</h4>
                                                         <h3>Don't miss<br> Trending</h3>
@@ -377,15 +390,23 @@
                                     <li><a href="blog.html">Blog </a></li>                                    
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Dashboard</a></li>
-                                            <li><a href="#">Products</a></li>
-                                            <li><a href="#">Categories</a></li>
-                                            <li><a href="#">Coupons</a></li>
-                                            <li><a href="#">Orders</a></li>
-                                            <li><a href="#">Customers</a></li>
-                                            <li><a href="#">Logout</a></li>                                            
-                                        </ul>
+                                        @auth
+                                           @if(Auth::user()->utype === 'ADM')
+                                                <ul class="sub-menu">
+                                                    <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
+                                                    <li><a href="#">Products</a></li>
+                                                    <li><a href="#">Categories</a></li>
+                                                    <li><a href="#">Coupons</a></li>
+                                                    <li><a href="#">Orders</a></li>
+                                                    <li><a href="#">Customers</a></li>
+                                                    <li><a href="#">Logout</a></li>                                            
+                                                </ul>
+                                            @else
+                                                <ul class="sub-menu">
+                                                    <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>                                            
+                                                </ul>
+                                            @endif
+                                          @endauth 
                                     </li>
                                 </ul>
                             </nav>
@@ -399,20 +420,20 @@
                         <div class="header-action-2">
                             <div class="header-action-icon-2">
                                 <a href="shop-wishlist.php">
-                                    <img alt="Surfside Media" src="assets/imgs/theme/icons/icon-heart.svg">
+                                    <img alt="Surfside Media" src="{{asset('assets/imgs/theme/icons/icon-heart.svg')}}">
                                     <span class="pro-count white">4</span>
                                 </a>
                             </div>
                             <div class="header-action-icon-2">
                                 <a class="mini-cart-icon" href="cart.html">
-                                    <img alt="Surfside Media" src="assets/imgs/theme/icons/icon-cart.svg">
+                                    <img alt="Surfside Media" src="{{asset('assets/imgs/theme/icons/icon-cart.svg')}}">
                                     <span class="pro-count white">2</span>
                                 </a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                     <ul>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-3.jpg"></a>
+                                                <a href="product-details.html"><img alt="Surfside Media" src="{{asset('assets/imgs/shop/thumbnail-3.jpg')}}"></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="product-details.html">Plain Striola Shirts</a></h4>
@@ -424,7 +445,7 @@
                                         </li>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-4.jpg"></a>
+                                                <a href="product-details.html"><img alt="Surfside Media" src="{{asset('assets/imgs/shop/thumbnail-4.jpg')}}"></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="product-details.html">Macbook Pro 2022</a></h4>
@@ -463,7 +484,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="mobile-header-logo">
-                    <a href="index.html"><img src="assets/imgs/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="{{asset('assets/imgs/logo/logo.png')}}" alt="logo"></a>
                 </div>
                 <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                     <button class="close-style search-close">
@@ -560,18 +581,18 @@
                 </div>
                 <div class="mobile-social-icon">
                     <h5 class="mb-15 text-grey-4">Follow Us</h5>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a>
+                    <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-facebook.svg')}}" alt=""></a>
+                    <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-twitter.svg')}}" alt=""></a>
+                    <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-instagram.svg')}}" alt=""></a>
+                    <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-pinterest.svg')}}" alt=""></a>
+                    <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-youtube.svg')}}" alt=""></a>
                 </div>
             </div>
         </div>
     </div>        
     
-    {{$slot}}
-
+        {{$slot}}
+        
     <footer class="main">
         <section class="newsletter p-30 text-white wow fadeIn animated">
             <div class="container">
@@ -579,7 +600,7 @@
                     <div class="col-lg-7 mb-md-3 mb-lg-0">
                         <div class="row align-items-center">
                             <div class="col flex-horizontal-center">
-                                <img class="icon-email" src="assets/imgs/theme/icons/icon-email.svg" alt="">
+                                <img class="icon-email" src="{{asset('assets/imgs/theme/icons/icon-email.svg')}}" alt="">
                                 <h4 class="font-size-20 mb-0 ml-3">Sign up to Newsletter</h4>
                             </div>
                             <div class="col my-4 my-md-0 des">
@@ -604,25 +625,25 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="widget-about font-md mb-md-5 mb-lg-0">
                             <div class="logo logo-width-1 wow fadeIn animated">
-                                <h4>ABHISHEK</h4>
+                                <a href="index.html"><img src="{{asset('assets/imgs/logo/logo.png')}}" alt="logo"></a>
                             </div>
                             <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                             <p class="wow fadeIn animated">
-                                <strong>Address: </strong>Ghaziabad
+                                <strong>Address: </strong>562 Wellington Road
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Phone: </strong>+91 7982748233
+                                <strong>Phone: </strong>+1 0000-000-000
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Email: </strong>contact@abhishek-pandeyji.com
+                                <strong>Email: </strong>contact@surfsidemedia.in
                             </p>
                             <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                             <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt=""></a>
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-facebook.svg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-twitter.svg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-instagram.svg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-pinterest.svg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-youtube.svg')}}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -652,13 +673,13 @@
                             <div class="col-md-8 col-lg-12">
                                 <p class="wow fadeIn animated">From App Store or Google Play</p>
                                 <div class="download-app wow fadeIn animated mob-app">
-                                    <a href="#" class="hover-up mb-sm-4 mb-lg-0"><img class="active" src="assets/imgs/theme/app-store.jpg" alt=""></a>
-                                    <a href="#" class="hover-up"><img src="assets/imgs/theme/google-play.jpg" alt=""></a>
+                                    <a href="#" class="hover-up mb-sm-4 mb-lg-0"><img class="active" src="{{asset('assets/imgs/theme/app-store.jpg')}}" alt=""></a>
+                                    <a href="#" class="hover-up"><img src="{{asset('assets/imgs/theme/google-play.jpg')}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-12 mt-md-3 mt-lg-0">
                                 <p class="mb-20 wow fadeIn animated">Secured Payment Gateways</p>
-                                <img class="wow fadeIn animated" src="assets/imgs/theme/payment-method.png" alt="">
+                                <img class="wow fadeIn animated" src="{{asset('assets/imgs/theme/payment-method.png')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -677,35 +698,35 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="text-lg-end text-start font-sm text-muted mb-0">
-                        &copy; <strong class="text-brand">ABHISHEK</strong> All rights reserved
+                        &copy; <strong class="text-brand">SurfsideMedia</strong> All rights reserved
                     </p>
                 </div>
             </div>
         </div>
     </footer>    
     <!-- Vendor JS-->
-<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
-<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-<script src="assets/js/plugins/slick.js"></script>
-<script src="assets/js/plugins/jquery.syotimer.min.js"></script>
-<script src="assets/js/plugins/wow.js"></script>
-<script src="assets/js/plugins/jquery-ui.js"></script>
-<script src="assets/js/plugins/perfect-scrollbar.js"></script>
-<script src="assets/js/plugins/magnific-popup.js"></script>
-<script src="assets/js/plugins/select2.min.js"></script>
-<script src="assets/js/plugins/waypoints.js"></script>
-<script src="assets/js/plugins/counterup.js"></script>
-<script src="assets/js/plugins/jquery.countdown.min.js"></script>
-<script src="assets/js/plugins/images-loaded.js"></script>
-<script src="assets/js/plugins/isotope.js"></script>
-<script src="assets/js/plugins/scrollup.js"></script>
-<script src="assets/js/plugins/jquery.vticker-min.js"></script>
-<script src="assets/js/plugins/jquery.theia.sticky.js"></script>
-<script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+<script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.js')}}"></script>
+<script src="{{asset('assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
+<script src="{{asset('assets/js/vendor/jquery-migrate-3.3.0.min.js')}}"></script>
+<script src="{{asset('assets/js/vendor/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/slick.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.syotimer.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/wow.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery-ui.js')}}"></script>
+<script src="{{asset('assets/js/plugins/perfect-scrollbar.js')}}"></script>
+<script src="{{asset('assets/js/plugins/magnific-popup.js')}}"></script>
+<script src="{{asset('assets/js/plugins/select2.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/waypoints.js')}}"></script>
+<script src="{{asset('assets/js/plugins/counterup.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.countdown.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/images-loaded.js')}}"></script>
+<script src="{{asset('assets/js/plugins/isotope.js')}}"></script>
+<script src="{{asset('assets/js/plugins/scrollup.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.vticker-min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.theia.sticky.js')}}"></script>
+<script src="{{asset('assets/js/plugins/jquery.elevatezoom.js')}}"></script>
 <!-- Template  JS -->
-<script src="assets/js/main.js?v=3.3"></script>
-<script src="assets/js/shop.js?v=3.3"></script></body>
+<script src="{{asset('assets/js/main.js')}}?v=3.3"></script>
+<script src="{{asset('assets/js/shop.js')}}?v=3.3"></script></body>
 
 </html>
