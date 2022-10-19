@@ -1,5 +1,5 @@
-<x-guest-layout>
-    <x-auth-card>
+<x-app-layout>
+    {{-- <x-auth-card>
         <x-slot name="logo">
             <a href="/">
                 <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
@@ -53,13 +53,13 @@
                 </x-primary-button>
             </div>
         </form>
-    </x-auth-card>
+    </x-auth-card> --}}
 
-    {{-- <main class="main">
+    <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>                    
+                    <a href="/" rel="nofollow">Home</a>                    
                     <span></span> Login
                 </div>
             </div>
@@ -75,22 +75,22 @@
                                         <div class="heading_s1">
                                             <h3 class="mb-30">Login</h3>
                                         </div>
-                                        <form method="POST" action="{{ route('login') }}>
+                                        <form method="POST" action="{{ route('login') }}">
                                             @csrf
                                             <div class="form-group">
-                                                <input type="text" required="" name="email" placeholder="Your Email">
+                                                <input type="text" required="" name="email" placeholder="Your Email"  required autofocus>
                                             </div>
                                             <div class="form-group">
-                                                <input required="" type="password" name="password" placeholder="Password">
+                                                <input required="" type="password" name="password" placeholder="Password" required autocomplete="current-password">
                                             </div>
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
                                                     <div class="custome-checkbox">
-                                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
+                                                        <input class="form-check-input" type="checkbox" name="remember" id="exampleCheckbox1" value="">
                                                         <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
                                                     </div>
                                                 </div>
-                                                <a class="text-muted" href="#">Forgot password?</a>
+                                                <a class="text-muted" href="{{ route('password.request') }}">Forgot password?</a>
                                             </div>
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-fill-out btn-block hover-up" name="login">Log in</button>
@@ -108,5 +108,5 @@
                 </div>
             </div>
         </section>
-    </main> --}}
-</x-guest-layout>
+    </main>
+</x-app-layout>
