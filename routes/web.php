@@ -24,7 +24,7 @@ use App\Http\Livewire\Admin\AdminDashboardComponent;
 //     return view('welcome');
 // });
 Route::get('/',HomeComponent::class)->name('home.index');
-Route::get('/shope',HomeComponent::class)->name('shope');
+Route::get('/shope',ShopeComponent::class)->name('shope');
 Route::get('/cart',CartComponent::class)->name('cart');
 Route::get('/check',CheckComponent::class)->name('check');
 
