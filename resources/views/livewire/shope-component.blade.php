@@ -58,13 +58,14 @@
                             </div>
                         </div>
                         <div class="row product-grid-3">
+                            @foreach ($products as $product)
                             <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="product-details.html">
-                                                <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="">
-                                                <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="">
+                                                <img class="default-img" src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-1.jpg" alt="{{$product->name}}">
+                                                <img class="hover-img" src="assets/imgs/shop/product-')}}{{$product->id}}-2.jpg" alt="{{$product->name}}">
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -81,15 +82,15 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
+                                        <h2><a href="{{route('product.details')}}">{{$product->name}}</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
                                             </span>
                                         </div>
                                         <div class="product-price">
-                                            <span>$238.85 </span>
-                                            <span class="old-price">$245.8</span>
+                                            <span>${{$product->regular_price}}</span>
+                                            {{-- <span class="old-price">$245.8</span> --}}
                                         </div>
                                         <div class="product-action-1 show">
                                             <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
@@ -97,7 +98,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-6 col-sm-6">
+                            @endforeach
+                            {{-- <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
@@ -518,11 +520,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <!--pagination-->
                         <div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
-                            <nav aria-label="Page navigation example">
+                            {{$products->links()}}
+                            {{-- <nav aria-label="Page navigation example">
                                 <ul class="pagination justify-content-start">
                                     <li class="page-item active"><a class="page-link" href="#">01</a></li>
                                     <li class="page-item"><a class="page-link" href="#">02</a></li>
@@ -530,7 +533,7 @@
                                     <li class="page-item"><a class="page-link dot" href="#">...</a></li>
                                     <li class="page-item"><a class="page-link" href="#">16</a></li>
                                     <li class="page-item"><a class="page-link" href="#"><i class="fi-rs-angle-double-small-right"></i></a></li>
-                                </ul>
+                                </ul> --}}
                             </nav>
                         </div>
                     </div>

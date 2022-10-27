@@ -30,7 +30,7 @@
                                         <li><a href="#"><img src="{{asset('assets/imgs/theme/flag-dt.png')}}')}}" alt="">Deutsch</a></li>
                                         <li><a href="#"><img src="{{asset('assets/imgs/theme/flag-ru.png')}}')}}" alt="">Pусский</a></li>
                                     </ul>
-                                </li>                                
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="text-center">
                             <div id="news-flash" class="d-inline-block">
                                 <ul>
-                                    <li>Get great devices up to 50% off <a href="shop.html">View details</a></li>
+                                    <li>Get great devices up to 50% off <a href="{{route('shope')}}">View details</a></li>
                                     <li>Supper Value Deals - Save more with coupons</li>
                                     <li>Trendy 25silver jewelry, save up 35% off today <a href="shope">Shop now</a></li>
                                 </ul>
@@ -48,9 +48,9 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
                             @auth
-                            <ul>                                
+                            <ul>
                                 <li>
-                                    <i class="fi-rs-user"></i>{{Auth::user()->name}} / 
+                                    <i class="fi-rs-user"></i>{{Auth::user()->name}} /
                                     <form action="{{route('logout')}}" method="post">
                                         @csrf
                                     <a href="{{route('logout')}}" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>
@@ -58,7 +58,7 @@
                                 </li>
                                 </ul>
                             @else
-                            <ul>                                
+                            <ul>
                             <li><i class="fi-rs-key"></i><a href="{{route('login')}}">Log In </a>  / <a href="{{route('register')}}">Sign Up</a></li>
                             </ul>
                             @endif
@@ -75,7 +75,7 @@
                     </div>
                     <div class="header-right">
                         <div class="search-style-1">
-                            <form action="#">                                
+                            <form action="#">
                                 <input type="text" placeholder="Search for items...">
                             </form>
                         </div>
@@ -150,7 +150,7 @@
                             <div class="categori-dropdown-wrap categori-dropdown-active-large">
                                 <ul>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
+                                        <a href="{{route('shope')}}"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -205,7 +205,7 @@
                                         </div>
                                     </li>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a>
+                                        <a href="{{route('shope')}}"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -251,7 +251,7 @@
                                         </div>
                                     </li>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a>
+                                        <a href="{{route('shope')}}"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -305,19 +305,19 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Jewelry & Accessories</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-diamond"></i>Jewelry & Accessories</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
+                                    <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
                                     <li>
                                         <ul class="more_slide_open" style="display: none;">
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Beauty, Health</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Bags and Shoes</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Consumer Electronics</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Automobiles & Motorcycles</a></li>
+                                            <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-desktop"></i>Beauty, Health</a></li>
+                                            <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-cpu"></i>Bags and Shoes</a></li>
+                                            <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-diamond"></i>Consumer Electronics</a></li>
+                                            <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-home"></i>Automobiles & Motorcycles</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -327,9 +327,9 @@
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
                             <nav>
                                 <ul>
-                                    <li><a class="active" href="index.html">Home </a></li>
+                                    <li><a class="active" href="/">Home </a></li>
                                     <li><a href="about.html">About</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="{{route('shope')}}">Shop</a></li>
                                     <li class="position-static"><a href="#">Our Collections <i class="fi-rs-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
@@ -387,7 +387,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Blog </a></li>                                    
+                                    <li><a href="blog.html">Blog </a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
                                         @auth
@@ -399,14 +399,14 @@
                                                     <li><a href="#">Coupons</a></li>
                                                     <li><a href="#">Orders</a></li>
                                                     <li><a href="#">Customers</a></li>
-                                                    <li><a href="#">Logout</a></li>                                            
+                                                    <li><a href="#">Logout</a></li>
                                                 </ul>
                                             @else
                                                 <ul class="sub-menu">
-                                                    <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>                                            
+                                                    <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>
                                                 </ul>
                                             @endif
-                                          @endauth 
+                                          @endauth
                                     </li>
                                 </ul>
                             </nav>
@@ -507,15 +507,15 @@
                         </a>
                         <div class="categori-dropdown-wrap categori-dropdown-active-small">
                             <ul>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a></li>
-                                <li> <a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a></li>
+                                <li> <a href="{{route('shope')}}"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
+                                <li><a href="{{route('shope')}}"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
                             </ul>
                         </div>
                     </div>
@@ -523,7 +523,7 @@
                     <nav>
                         <ul class="mobile-menu">
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="index.html">Home</a></li>
-                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="shop.html">shop</a></li>
+                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="{{route('shope')}}">shop</a></li>
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Our Collections</a>
                                 <ul class="dropdown">
                                     <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Women's Fashion</a>
@@ -570,9 +570,9 @@
                         <a href="contact.html"> Our location </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="login.html">Log In </a>                        
+                        <a href="login.html">Log In </a>
                     </div>
-                    <div class="single-mobile-header-info">                        
+                    <div class="single-mobile-header-info">
                         <a href="register.html">Sign Up</a>
                     </div>
                     <div class="single-mobile-header-info">
@@ -589,10 +589,10 @@
                 </div>
             </div>
         </div>
-    </div>        
-    
+    </div>
+
         {{$slot}}
-        
+
     <footer class="main">
         <section class="newsletter p-30 text-white wow fadeIn animated">
             <div class="container">
@@ -654,7 +654,7 @@
                             <li><a href="#">Delivery Information</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Contact Us</a></li>                            
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2  col-md-3">
@@ -663,7 +663,7 @@
                             <li><a href="my-account.html">My Account</a></li>
                             <li><a href="#">View Cart</a></li>
                             <li><a href="#">My Wishlist</a></li>
-                            <li><a href="#">Track My Order</a></li>                            
+                            <li><a href="#">Track My Order</a></li>
                             <li><a href="#">Order</a></li>
                         </ul>
                     </div>
@@ -703,7 +703,7 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
     <!-- Vendor JS-->
 <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.js')}}"></script>
 <script src="{{asset('assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
